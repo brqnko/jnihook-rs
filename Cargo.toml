@@ -1,0 +1,10 @@
+[package]
+name = "jnihook-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.95"
+jni = "0.21.1"
+jvmti = "0.5.0"
+uuid = { version = "1.11.0", features = ["v4"] }

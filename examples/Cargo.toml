@@ -1,0 +1,15 @@
+[package]
+name = "examples"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.95"
+jni = "0.21.1"
+jnihook-rs = { path = "../" }
+jvmti = "0.5.0"
+winapi = { version = "0.3.9", features = ["consoleapi", "libloaderapi", "processenv", "winbase", "wincon"] }
+windows = { version = "0.59.0", features = ["System", "Win32", "Win32_System_SystemServices"] }
+
+[lib]
+crate-type = ["cdylib"]
